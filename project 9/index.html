@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Upcoming College Events</h2>
+    <p>Explore upcoming events, check the dates and venues, and register below.</p>
+
+    <hr>
+
+    <!-- Event List Section -->
+    <h3>Event Schedule</h3>
+    <ul>
+        <li><strong>Tech Fest 2026</strong> - Date: March 15, 2026 | Venue: Main Auditorium | Description: Annual technical symposium with coding and robotics competitions.</li>
+        <li><strong>Cultural Night</strong> - Date: March 22, 2026 | Venue: Open Air Theatre | Description: An evening of music, dance, and drama performances.</li>
+        <li><strong>Annual Sports Meet</strong> - Date: April 5, 2026 | Venue: Sports Ground | Description: Inter-departmental athletics and tournament matches.</li>
+    </ul>
+
+    <hr>
+
+    <!-- Registration Form Section -->
+    <h3>Event Registration Form</h3>
+    <form id="event-form" onsubmit="registerEvent(event)">
+        <label for="event-select">Select Event:</label>
+        <select id="event-select" required>
+            <option value="">-- Choose Event --</option>
+            <option value="Tech Fest 2026">Tech Fest 2026</option>
+            <option value="Cultural Night">Cultural Night</option>
+            <option value="Annual Sports Meet">Annual Sports Meet</option>
+        </select>
+
+        <label for="student-name">Full Name:</label>
+        <input type="text" id="student-name" placeholder="Enter your full name" required>
+
+        <label for="student-email">Email Address:</label>
+        <input type="email" id="student-email" placeholder="Enter your email" required>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <p id="confirmation-msg" style="font-weight: bold; margin-top: 15px;"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
