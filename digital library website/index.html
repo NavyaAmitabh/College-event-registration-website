@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Digital Library Portal</h2>
+    <p>Browse and search educational resources, textbooks, and study materials by subject.</p>
+
+    <hr>
+
+    <!-- Search and Filter Section -->
+    <h3>Search & Filter</h3>
+    <label for="search-box">Search by Title:</label>
+    <input type="text" id="search-box" placeholder="Type book or material title..." oninput="filterResources()">
+
+    <label for="subject-select">Filter by Subject:</label>
+    <select id="subject-select" onchange="filterResources()">
+        <option value="All">All Subjects</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Mathematics">Mathematics</option>
+        <option value="Physics">Physics</option>
+    </select>
+
+    <hr>
+
+    <!-- Resource List Section -->
+    <h3>Educational Resources</h3>
+    <ul id="resource-list"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5DC;
+    color: #4a4a4a;
+    margin: 20px;
+}
+
+h2 {
+    color: rgb(228, 145, 20);
+}
+
+h3 {
+    color: rgb(150, 80, 20);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], select {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: rgb(228, 145, 20);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
